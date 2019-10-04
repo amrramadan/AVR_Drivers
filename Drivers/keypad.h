@@ -12,10 +12,10 @@
 #ifndef KEYPAD_H_
 #define KEYPAD_H_
 
-/*keypad number of rows and columns configurations*/
+/* keypad number of rows and columns configurations */
 #define N_Col 4
 #define N_Row 4
-/*keypad port configurations*/
+/* keypad port configurations */
 #define KEYPAD_PORT_OUT PORTA
 #define KEYPAD_PORT_IN PINA
 #define KEYPAD_PORT_DIR DDRA
