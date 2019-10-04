@@ -87,8 +87,8 @@ uint8 Keypad_getPressedKey(void) {
 	uint8 col, row;
 	while (1) {
 		for (col = 0; col < N_Col; col++) {
-			KEYPAD_PORT_DIR = (0b00010000 << col); //each time one of col pins will be output pin
-			KEYPAD_PORT_OUT = (~(0b00010000) << col); //each time enable internal pullup for one pin
+			KEYPAD_PORT_DIR = (0b00010000 << col); // each time one of col pins will be output pin
+			KEYPAD_PORT_OUT = (~(0b00010000) << col); // each time enable internal pullup for one pin
 			for (row = 0; row < N_Row; row++) {
 				if (!(KEYPAD_PORT_IN & (1 << row))) { // check if switch pressed
 					#if(N_Col==3)
