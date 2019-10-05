@@ -1,8 +1,8 @@
 /*
- * lcd.h
- *
+ * Module: lcd.h
+ * Description: Header file for LCD Driver
  *  Created on: Oct 5, 2019
- *      Author: amrra
+ *      Author: Amr Ramadan
  */
 
 #ifndef LCD_H_

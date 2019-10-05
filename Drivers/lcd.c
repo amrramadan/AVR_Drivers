@@ -1,8 +1,8 @@
 /*
- * lcd.c
- *
+ * Module: lcd.c
+ * Description: Source file for LCD Driver
  *  Created on: Oct 5, 2019
- *      Author: amrra
+ *      Author: Amr Ramadan
  */
 
 #include "lcd.h"
