@@ -4,13 +4,16 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../keypad.c 
+../keypad.c \
+../lcd.c 
 
 OBJS += \
-./keypad.o 
+./keypad.o \
+./lcd.o 
 
 C_DEPS += \
-./keypad.d 
+./keypad.d \
+./lcd.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
