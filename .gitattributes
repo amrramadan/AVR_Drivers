@@ -1,7 +1,3 @@
 # Auto detect text files and perform LF normalization
 * text=auto
-.metadata/.plugins/com.genuitec.eclipse.ui.common.platform/color-definitions-fix.css
-.metadata/.plugins/com.genuitec.eclipse.ui.common.platform/colors-org.eclipse.egit.ui-1849137576.css
-.metadata/.plugins/com.genuitec.eclipse.ui.common.platform/colors-org.eclipse.epp.mpc.ui.css--1027399938.css
-.metadata/.plugins/com.genuitec.eclipse.ui.common.platform/colors-org.eclipse.mylyn.tasks.ui--477129374.css
-.metadata/.plugins/com.genuitec.eclipse.ui.common.platform/splash-fix.css
+*.css linguist-language=C
