@@ -30,7 +30,7 @@ void LCD_displayChar(uint8 data) {
 	_delay_ms(1);
 }
 
-void LCD_displayChar(uint8 data){
+void LCD_init(void){
 	LCD_DATA_PORT_DIR = 0xFF; // configure data port as output port
 	LCD_CTRL_PORT_DIR |= (1 << RS) | (1 << RW) | (1 << E); // configure Control pins
 	LCD_sendCommand(TWO_LINE_LCD_EIGHT_BIT_MODE); //use 2-line lcd, 8-bit mode, 5*7 dots

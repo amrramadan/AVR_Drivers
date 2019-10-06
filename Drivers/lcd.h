@@ -32,7 +32,7 @@
 // Functions Prototypes
 void LCD_sendCommand(uint8 command);
 void LCD_displayChar(uint8 data);
-void LCD_displayChar(uint8 data);
+void LCD_init(void);
 void LCD_displayString(uint8 *Str);
 void LCD_goToRowCol(uint8 row, uint8 col);
 void LCD_displayStringRowCol(uint8 *Str , uint8 row, uint8 col);
