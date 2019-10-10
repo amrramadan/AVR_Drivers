@@ -8,6 +8,7 @@ C_SRCS += \
 ../keypad.c \
 ../lcd.c \
 ../main.c \
+../spi.c \
 ../uart.c 
 
 OBJS += \
@@ -15,6 +16,7 @@ OBJS += \
 ./keypad.o \
 ./lcd.o \
 ./main.o \
+./spi.o \
 ./uart.o 
 
 C_DEPS += \
@@ -22,6 +24,7 @@ C_DEPS += \
 ./keypad.d \
 ./lcd.d \
 ./main.d \
+./spi.d \
 ./uart.d 
 
 
