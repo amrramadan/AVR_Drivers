@@ -1,8 +1,8 @@
 /*
- * spi.c
- *
+ * Module: spi.c
+ * Description: Source file for SPI Driver
  *  Created on: Oct 10, 2019
- *      Author: amrra
+ *      Author: Amr Ramadan
  */
 
 #include "spi.h"
@@ -55,7 +55,7 @@ void SPI_sendString(uint8 *Ptr) {
 	}
 }
 
-void SPI_receiveString(uint8 *Ptr) {
+void SPI_receiveString(uint8 *Ptr){
 	*Ptr = SPI_receiveByte();
 	while (*Ptr != "#") {
 		Ptr++;
