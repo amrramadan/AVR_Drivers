@@ -8,6 +8,7 @@
 #include "adc.h"
 #include "lcd.h"
 #include "keypad.h"
+#include "uart.h"
 int main(){
 
 

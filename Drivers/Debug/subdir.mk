@@ -7,19 +7,22 @@ C_SRCS += \
 ../adc.c \
 ../keypad.c \
 ../lcd.c \
-../main.c 
+../main.c \
+../uart.c 
 
 OBJS += \
 ./adc.o \
 ./keypad.o \
 ./lcd.o \
-./main.o 
+./main.o \
+./uart.o 
 
 C_DEPS += \
 ./adc.d \
 ./keypad.d \
 ./lcd.d \
-./main.d 
+./main.d \
+./uart.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
