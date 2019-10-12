@@ -8,8 +8,12 @@
 #define EXTERNAL_EEPROM_H_
 
 #include "std_types.h"
-
+/*************************Preprocessor Macros***********************/
 #define ERROR 0
 #define SUCCESS 1
+
+/*************************Functions Prototypes***********************/
+uint8 EEPROM_writeByte(uint16 Address, uint8 Data);
+uint8 EEPROM_ReadByte(uint16 Address, uint8 *Data);
 
 #endif /* EXTERNAL_EEPROM_H_ */
