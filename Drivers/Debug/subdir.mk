@@ -5,6 +5,8 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../adc.c \
+../external_eeprom.c \
+../i2c.c \
 ../keypad.c \
 ../lcd.c \
 ../main.c \
@@ -13,6 +15,8 @@ C_SRCS += \
 
 OBJS += \
 ./adc.o \
+./external_eeprom.o \
+./i2c.o \
 ./keypad.o \
 ./lcd.o \
 ./main.o \
@@ -21,6 +25,8 @@ OBJS += \
 
 C_DEPS += \
 ./adc.d \
+./external_eeprom.d \
+./i2c.d \
 ./keypad.d \
 ./lcd.d \
 ./main.d \
