@@ -36,7 +36,7 @@ void SPI_initSlave(void) {
 	SPCR = (1 << SPE);
 }
 
-void SPI_sendByte(const uint8 Data){
+void SPI_sendByte(uint8 Data){
 	SPDR = Data; //Send Data to SPI
 	/* wait until data sent ( flag =1 )*/
 	while(BIT_IS_CLEAR(SPSR,SPIF));
@@ -48,22 +48,18 @@ uint8 SPI_receiveByte(void)
 	return SPDR; //return data
 }
 
-void SPI_sendString(const uint8 *Ptr) {
-	uint8 i = 0;
-	while(Ptr[i] != '\0')
-	{
-		SPI_sendByte(Ptr[i]);
-		i++;
+void SPI_sendString(uint8 *Ptr) {
+	while (*Ptr != "\0") {
+		SPI_sendByte(*Ptr);
+		Ptr++;
 	}
 }
 
 void SPI_receiveString(uint8 *Ptr){
-	unsigned char i = 0;
-	Ptr[i] = SPI_receiveByte();
-	while(Ptr[i] != '#')
-	{
-		i++;
-		Ptr[i] = SPI_receiveByte();
+	*Ptr = SPI_receiveByte();
+	while (*Ptr != "#") {
+		Ptr++;
+		*Ptr = SPI_receiveByte();
 	}
-	Ptr[i] = '\0';
+	*Ptr = '\0';
 }

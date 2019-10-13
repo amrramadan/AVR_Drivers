@@ -36,7 +36,7 @@ void SPI_initSlave(void) {
 	SPCR = (1 << SPE);
 }
 
-void SPI_sendByte(const uint8 Data){
+void SPI_sendByte(uint8 Data){
 	SPDR = Data; //Send Data to SPI
 	/* wait until data sent ( flag =1 )*/
 	while(BIT_IS_CLEAR(SPSR,SPIF));

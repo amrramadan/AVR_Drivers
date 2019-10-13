@@ -17,9 +17,9 @@ typedef enum SCK_Frequency {Fosc_4,Fosc_16,Fosc_64,Fosc_128}SCK;
 /*******************Functions Prototypes*************************/
 void SPI_initMaster(enum SCK_Frequency SCK);
 void SPI_initSlave(void);
-void SPI_sendByte(const uint8 Data);
+void SPI_sendByte(uint8 Data);
 uint8 SPI_receiveByte(void);
-void SPI_sendString(const uint8 *Ptr);
+void SPI_sendString(uint8 *Ptr);
 void SPI_receiveString(uint8 *Ptr);
 
 #endif /* SPI_H_ */
