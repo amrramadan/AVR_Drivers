@@ -4,22 +4,16 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../external_eeprom.c \
-../i2c.c \
-../lcd.c \
-../main.c 
+../main.c \
+../uart.c 
 
 OBJS += \
-./external_eeprom.o \
-./i2c.o \
-./lcd.o \
-./main.o 
+./main.o \
+./uart.o 
 
 C_DEPS += \
-./external_eeprom.d \
-./i2c.d \
-./lcd.d \
-./main.d 
+./main.d \
+./uart.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
